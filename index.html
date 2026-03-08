@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>COOOOK ASIGIMMM 𓆩🖤𓆪</title>
+<style>
+body {
+  margin:0; padding:0;
+  background:#111;
+  color:#ff0000;
+  font-family:'Courier New', monospace;
+  text-align:center;
+}
+.header h1 {
+  margin:30px 0;
+  font-size:2.5em;
+  text-shadow:2px 2px #000;
+}
+.photos {
+  display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin:20px;
+}
+.photos img {
+  width:160px; height:160px; object-fit:cover;
+  border:2px solid #ff0000; border-radius:10px;
+  transition:transform 0.3s, box-shadow 0.3s;
+}
+.photos img:hover {
+  transform:scale(1.1); box-shadow:0 0 15px #ff0000;
+}
+.love-section, .secret-message {margin:30px 10px;}
+button {
+  padding:10px 20px; font-size:1em;
+  background:#ff0000; border:none; border-radius:5px;
+  cursor:pointer; color:#fff; margin-top:10px;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+button:hover {background:#aa0000; box-shadow:0 0 10px #ff0000;}
+#message {
+  display:none;
+  border:2px solid #ff0000;
+  padding:10px;
+  border-radius:5px;
+  background:#111;
+  margin-top:10px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+<h1>Begumhinhoya COOOOK ASIGIMMM 𓆩🖤𓆪</h1>
+</div>
+
+<div class="gallery">
+<h2>Dunyanın En Guzel Kızı</h2>
+<div class="photos">
+<img src="mylove1.jpg" alt="">
+<img src="mylove2.jpg" alt="">
+<img src="mylove3.jpg" alt="">
+</div>
+</div>
+
+<div class="love-section">
+<h2>Seni neden seviyorum</h2>
+<p id="loveText"></p>
+<button onclick="document.getElementById('loveText').innerHTML='Karanlığın içinden geçerken seni buldum.<br>Her şey siyahken senin ışığın kırmızı gibi parlıyor.<br>Ruhumun en derin çukurlarında bile senin varlığınla nefes alıyorum.<br>Bu dünyada senin gibi birini bir daha asla bulamam.<br>Sen benim tekimsin, gölgelerimin en güzel melodisi, benim karanlık aşkım.';">Göster</button>
+</div>
+
+<div class="secret-message">
+<h2>Gizli Mesaj</h2>
+<button onclick="document.getElementById('message').style.display='block';">Tıkla ve Mesajı Gör</button>
+<p id="message">
+Sen benim karanlık kalbimdeki tek ışığımsın.<br>
+Seninle her gölge bile güzel.<br>
+Hiçbir zaman kaybolmayacak aşkımız. 💀❤️
+</p>
+</div>
+
+</body>
+</html>
